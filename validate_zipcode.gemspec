@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{ Zip code validation for Rails. }
   spec.description   = %q{ Adds validation methods considering different country zip code formats. }
-  spec.homepage      = "https://github.com/RamonHossein/validate_zipcode."
+  spec.homepage      = "https://github.com/RamonHossein/validate_zipcode"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
@@ -22,6 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "shoulda", "~> 3.5"
 
-  spec.add_dependency 'activemodel', "~> 3.2.0"
+  spec.add_dependency 'activemodel'
 end
