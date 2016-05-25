@@ -1,8 +1,8 @@
 # ValidateZipcode
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/validate_zipcode`. To experiment with that code, run `bin/console` for an interactive prompt.
+Adds zip code / postal code validation support to Rails (ActiveModel) and test it in a simple way.
 
-TODO: Delete this and the text above, and describe your gem
+Any other country's postal code that not in this list `list of country identification` will validate without errors.
 
 ## Installation
 
@@ -22,20 +22,54 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Just use as any other validator passing the country:
 
-## Development
+ValidateZipcode expects the model to have an attribute called country to contain the country identification.
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+```ruby
+class Address < ActiveRecord::Base
+  validates :zipcode, zipcode: {country: "US"}
+end
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+## List of country identification
+
+| Country | Identification | Format | Link |
+|:-------:|:------------:|:-----------:|:-----------:|
+| United States | US | 12345 or 12345-6789 | no link yet |
+
+## Error Message
+
+If you need to localize the error message, just add this to your I18n locale file:
+
+```ruby
+errors:
+  messages:
+    this_zip_code_is_invalid: "This zip code is invalid"
+```
+
+You can provide your own message using :message option.
+
+```ruby
+validates :zipcode, zipcode: {country: "US", message: "new error message"}
+```
+
+## Mantainers
+
+[RamonHossein](https://github.com/RamonHossein)
+
+## Contributors
+
+To see the generous people who have contributed code, take a look at the [contributors list](http://github.com/RamonHossein/validate_zipcode/contributors).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/validate_zipcode. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Added some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
