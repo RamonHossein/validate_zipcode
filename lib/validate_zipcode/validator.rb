@@ -1,7 +1,8 @@
 module ValidateZipcode
   class Validator
     def initialize(zipcode, locale)
-      variables(zipcode, locale) unless zipcode.blank?
+      @zipcode = zipcode
+      variables(locale) unless @zipcode.blank?
     end
 
     def valid?
@@ -10,8 +11,7 @@ module ValidateZipcode
     end
 
     private
-      def variables(zipcode, locale)
-        @zipcode = zipcode
+      def variables(locale)
         @match = regex_zipcode(locale.upcase)
       end
 

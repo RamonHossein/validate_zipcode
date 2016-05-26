@@ -4,5 +4,10 @@ module ValidateZipcode
       match = zipcode =~ /^([0-9]{5})$|([0-9]{9})$|([0-9]{5}-[0-9]{4})$/
       match == 0 ? true : false
     end
+
+    def self.BR(zipcode)
+      match = zipcode =~ /^([0-9]{5}-[0-9]{3})$|([0-9]{8})$/
+      match == 0 ? true : false
+    end
   end
 end
