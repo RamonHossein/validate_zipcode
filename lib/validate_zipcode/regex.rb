@@ -19,5 +19,9 @@ module ValidateZipcode
       match = zipcode =~ /^([0-9]{5})$/
       match == 0 ? true : false
     end
+
+    def self.DE(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+    end
   end
 end
