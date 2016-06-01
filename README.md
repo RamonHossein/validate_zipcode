@@ -38,6 +38,7 @@ end
 |:-------:|:------------:|:-----------:|:-----------:|
 | Brazil | BR | 35001-345 | [upu](http://www.upu.int/fileadmin/documentsFiles/activities/addressingUnit/braEn.pdf) |
 | France | FR | 75007 | [upu](http://www.upu.int/fileadmin/documentsFiles/activities/addressingUnit/fraEn.pdf) |
+| Italy | IT | 20090 | [upu](http://www.upu.int/fileadmin/documentsFiles/activities/addressingUnit/itaEn.pdf) |
 | United States | US | 90410 or 10118-0229 | [upu](http://www.upu.int/fileadmin/documentsFiles/activities/addressingUnit/usaEn.pdf) |
 
 ## Error Message
