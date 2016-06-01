@@ -4,7 +4,7 @@ require 'fake_address/address'
 # Spain
 describe ValidateZipcode do
   # Format [gsub and upcase]
-  context "France" do
+  context "Spain" do
     context "Format should be valid" do
       # Code
       it "ES / es" do

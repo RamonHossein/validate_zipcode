@@ -4,7 +4,7 @@ require 'fake_address/address'
 # China
 describe ValidateZipcode do
   # Format [gsub and upcase]
-  context "Germany or Deutsch" do
+  context "China" do
     context "Format should be valid" do
       # Code
       it "CN / cn" do
@@ -53,7 +53,7 @@ describe ValidateZipcode do
     end
 
     context "should be invalid with zip code" do
-      # Wrong format in 5 numbers.
+      # Wrong format in 6 numbers.
       it "2000829" do
         expect(ValidateZipcode::Validator.new("2000829", "CN").valid?).to be_falsey
       end

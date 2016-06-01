@@ -26,6 +26,8 @@ Just use as any other validator passing the country:
 
 ValidateZipcode expects the model has an attribute called country to contain the country identification.
 
+This Gem use as country identification the codes supplied by the ISO 3166-2 (International Organization for Standardization).
+
 ```ruby
 class Address < ActiveRecord::Base
   validates :zipcode, zipcode: {country: "US"}
