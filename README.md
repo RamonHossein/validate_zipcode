@@ -2,7 +2,7 @@
 
 Adds ZipCode / PostalCode validation support to Rails (ActiveModel) and test it in a simple way.
 
-Any other country's postal code that not on the [list of country identification](https://github.com/RamonHossein/validate_zipcode#list-of-country-identification) will validate without errors.
+Any other country's postal code that not on the [list of country identification](https://github.com/RamonHossein/validate_zipcode/blob/master/LIST.md) will validate without errors.
 
 ## Installation
 
@@ -31,16 +31,6 @@ class Address < ActiveRecord::Base
   validates :zipcode, zipcode: {country: "US"}
 end
 ```
-
-## List of country identification
-
-| Country | Identification | Format | Link |
-|:-------:|:------------:|:-----------:|:-----------:|
-| Brazil | BR | 35001-345 | [upu](http://www.upu.int/fileadmin/documentsFiles/activities/addressingUnit/braEn.pdf) |
-| Germany or Deutsch | DE | 81545 | [upu](http://www.upu.int/fileadmin/documentsFiles/activities/addressingUnit/deuEn.pdf) |
-| France | FR | 75007 | [upu](http://www.upu.int/fileadmin/documentsFiles/activities/addressingUnit/fraEn.pdf) |
-| Italy | IT | 20090 | [upu](http://www.upu.int/fileadmin/documentsFiles/activities/addressingUnit/itaEn.pdf) |
-| United States | US | 90410 or 10118-0229 | [upu](http://www.upu.int/fileadmin/documentsFiles/activities/addressingUnit/usaEn.pdf) |
 
 ## Error Message
 
