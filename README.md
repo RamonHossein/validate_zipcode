@@ -2,7 +2,7 @@
 
 Adds ZipCode / PostalCode validation support to Rails (ActiveModel) and test it in a simple way.
 
-Any other country's postal code that not on the [list of country identification](https://github.com/RamonHossein/validate_zipcode#list-of-country-identification) will validate without errors.
+Any other country's postal code that not on the [list of country identification](https://github.com/RamonHossein/validate_zipcode/blob/master/LIST.md) will validate without errors.
 
 ## Installation
 
@@ -26,18 +26,13 @@ Just use as any other validator passing the country:
 
 ValidateZipcode expects the model has an attribute called country to contain the country identification.
 
+This Gem use as country identification the codes supplied by the ISO 3166-2 (International Organization for Standardization).
+
 ```ruby
 class Address < ActiveRecord::Base
   validates :zipcode, zipcode: {country: "US"}
 end
 ```
-
-## List of country identification
-
-| Country | Identification | Format | Link |
-|:-------:|:------------:|:-----------:|:-----------:|
-| United States | US | 90410 or 10118-0229 | no link yet |
-| Brazil | BR | 35001-345 | no link yet |
 
 ## Error Message
 

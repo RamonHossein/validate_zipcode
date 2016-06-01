@@ -27,10 +27,12 @@ describe ValidateZipcode do
 
     context "Zip code unrecognized" do
       it "should be valid" do
-        # France
-        expect(ValidateZipcode::Validator.new("75008", "FR").valid?).to be_truthy
-        # Italy
-        expect(ValidateZipcode::Validator.new("30161", "IT").valid?).to be_truthy
+        # Narnia
+        expect(ValidateZipcode::Validator.new("75008", "NA").valid?).to be_truthy
+        # Avalon
+        expect(ValidateZipcode::Validator.new("30161", "AV").valid?).to be_truthy
+        # Winterfell
+        expect(ValidateZipcode::Validator.new("30161", "WI").valid?).to be_truthy
       end
     end
   end
