@@ -15,14 +15,49 @@ module ValidateZipcode
       match = zipcode =~ /^([0-9]{4})$/
       match == 0 ? true : false
     end
+    # Bolivia
+    def self.BO(zipcode)
+      match = zipcode =~ /^([0-9]{4})$/
+      match == 0 ? true : false
+    end
     # Brazil
     def self.BR(zipcode)
       match = zipcode =~ /^([0-9]{5}-[0-9]{3})$|([0-9]{8})$/
       match == 0 ? true : false
     end
+    # Bulgaria
+    def self.BG(zipcode)
+      match = zipcode =~ /^([0-9]{4})$/
+      match == 0 ? true : false
+    end
+    # Canada
+    def self.CA(zipcode)
+      match = zipcode =~ /^([a-zA-Z][0-9][a-zA-Z][ ][0-9][a-zA-Z][0-9])$|([a-zA-Z][0-9][a-zA-Z][0-9][a-zA-Z][0-9])$|([a-zA-Z][0-9][a-zA-Z]-[0-9][a-zA-Z][0-9])/
+      match == 0 ? true : false
+    end
+    # Chile
+    def self.CL(zipcode)
+      match = zipcode =~ /^([0-9]{3}-[0-9]{4})$|([0-9]{7})$/
+      match == 0 ? true : false
+    end
     # China
     def self.CN(zipcode)
       match = zipcode =~ /^([0-9]{6})$/
+      match == 0 ? true : false
+    end
+    # Colombia
+    def self.CO(zipcode)
+      match = zipcode =~ /^([0-9]{6})$/
+      match == 0 ? true : false
+    end
+    # Croatia
+    def self.HR(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Cuba
+    def self.CU(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
       match == 0 ? true : false
     end
     # Denmark
@@ -55,8 +90,23 @@ module ValidateZipcode
       match = zipcode =~ /^([0-9]{5})$/
       match == 0 ? true : false
     end
+    # Greece
+    def self.GR(zipcode)
+      match = zipcode =~ /^([0-9]{3}[ ][0-9]{2})$|([0-9]{5})$|([0-9]{3}-[0-9]{2})$/
+      match == 0 ? true : false
+    end
+    # India
+    def self.IN(zipcode)
+      match = zipcode =~ /^([0-9]{6})$/
+      match == 0 ? true : false
+    end
     # Indonesia
     def self.ID(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Iraq
+    def self.IQ(zipcode)
       match = zipcode =~ /^([0-9]{5})$/
       match == 0 ? true : false
     end
@@ -78,6 +128,31 @@ module ValidateZipcode
     # Kazakhstan
     def self.KZ(zipcode)
       match = zipcode =~ /^([0-9]{6})$/
+      match == 0 ? true : false
+    end
+    # Mexico
+    def self.MX(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Monaco
+    def self.MC(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Paraguay
+    def self.PY(zipcode)
+      match = zipcode =~ /^([0-9]{4})$/
+      match == 0 ? true : false
+    end
+    # Peru
+    def self.PE(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Portugal
+    def self.PT(zipcode)
+      match = zipcode =~ /^([0-9]{4}-[0-9]{3})$|([0-9]{7})$/
       match == 0 ? true : false
     end
     # Romania
