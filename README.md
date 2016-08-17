@@ -1,5 +1,9 @@
 # ValidateZipcode
 
+[![Gem Version](https://badge.fury.io/rb/validate_zipcode.png)](http://badge.fury.io/rb/validate_zipcode)
+[![Build Status](https://secure.travis-ci.org/RamonHossein/validate_zipcode.png?branch=master)](http://travis-ci.org/RamonHossein/validate_cpf)
+[![Coverage Status](https://coveralls.io/repos/RamonHossein/validate_zipcode/badge.png?branch=master)](https://coveralls.io/r/RamonHossein/validate_zipcode)
+
 Adds ZipCode / PostalCode validation support to Rails (ActiveModel) and test it in a simple way.
 
 Any other country's postal code that not on the [list of country identification](https://github.com/RamonHossein/validate_zipcode/blob/master/LIST.md) will validate without errors.
