@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["hosseinramon@gmail.com"]
 
   spec.summary       = %q{ Zip code validation for Rails. }
-  spec.description   = %q{ Adds validation methods considering different country zip code formats. }
+  spec.description   = %q{ Adds validation methods considering different country zip code formats. Currently, we can validate 81 countries. }
   spec.homepage      = "https://github.com/RamonHossein/validate_zipcode"
   spec.license       = "MIT"
 
