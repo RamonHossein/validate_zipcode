@@ -5,6 +5,11 @@ module ValidateZipcode
       match = zipcode =~ /^([0-9]{4})$/
       match == 0 ? true : false
     end
+    # Aland Islands
+    def self.AX(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
     # Albania
     def self.AL(zipcode)
       match = zipcode =~ /^([0-9]{4})$/
@@ -15,6 +20,21 @@ module ValidateZipcode
       match = zipcode =~ /^([0-9]{5})$/
       match == 0 ? true : false
     end
+    # American Samoa
+    def self.AS(zipcode)
+      match = zipcode =~ /^([0-9]{5})$|([0-9]{9})$|([0-9]{5}-[0-9]{4})$/
+      match == 0 ? true : false
+    end
+    # Argentina
+    def self.AR(zipcode)
+      match = zipcode =~ /^([a-zA-Z][0-9]{4}[a-zA-Z]{3})$/
+      match == 0 ? true : false
+    end
+    # Armenia
+    def self.AM(zipcode)
+      match = zipcode =~ /^([0-9]{4})$/
+      match == 0 ? true : false
+    end
     # Australia
     def self.AU(zipcode)
       match = zipcode =~ /^([0-9]{4})$/
@@ -22,6 +42,11 @@ module ValidateZipcode
     end
     # Austria
     def self.AT(zipcode)
+      match = zipcode =~ /^([0-9]{4})$/
+      match == 0 ? true : false
+    end
+    # Azerbaijan
+    def self.AZ(zipcode)
       match = zipcode =~ /^([0-9]{4})$/
       match == 0 ? true : false
     end
@@ -40,14 +65,29 @@ module ValidateZipcode
       match = zipcode =~ /^([0-9]{4})$/
       match == 0 ? true : false
     end
+    # Bhutan
+    def self.BT(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
     # Bolivia
     def self.BO(zipcode)
       match = zipcode =~ /^([0-9]{4})$/
       match == 0 ? true : false
     end
+    # BA Bosnia and Herzegovina
+    def self.BA(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
     # Brazil
     def self.BR(zipcode)
       match = zipcode =~ /^([0-9]{5}-[0-9]{3})$|([0-9]{8})$/
+      match == 0 ? true : false
+    end
+    # Brunei Darussalam
+    def self.BN(zipcode)
+      match = zipcode =~ /^([a-zA-Z]{2}[0-9]{4})$/
       match == 0 ? true : false
     end
     # Bulgaria
@@ -59,6 +99,11 @@ module ValidateZipcode
     def self.CV(zipcode)
       match = zipcode =~ /^([0-9]{4})$/
       match == 0 ? true : false
+    end
+    # Cambodia
+    def self.KH(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : fals
     end
     # Canada
     def self.CA(zipcode)
@@ -73,6 +118,16 @@ module ValidateZipcode
     # China
     def self.CN(zipcode)
       match = zipcode =~ /^([0-9]{6})$/
+      match == 0 ? true : false
+    end
+    # Christmas Island
+    def self.CX(zipcode)
+      match = zipcode =~ /^([0-9]{4})$/
+      match == 0 ? true : false
+    end
+    # Cocos (Keeling) Islands
+    def self.CC(zipcode)
+      match = zipcode =~ /^([0-9]{4})$/
       match == 0 ? true : false
     end
     # Colombia
@@ -100,6 +155,11 @@ module ValidateZipcode
       match = zipcode =~ /^([0-9]{4})$/
       match == 0 ? true : false
     end
+    # Czech Republic
+    def self.CZ(zipcode)
+      match = zipcode =~ /^([0-9]{3}[ ][0-9]{2})$|([0-9]{5})$/
+      match == 0 ? true : false
+    end
     # Denmark
     def self.DK(zipcode)
       match = zipcode =~ /^([0-9]{4})$/
@@ -108,6 +168,26 @@ module ValidateZipcode
     # Deutsch or Germany
     def self.DE(zipcode)
       match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Dominican Republic
+    def self.DO(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Ecuador
+    def self.EC(zipcode)
+      match = zipcode =~ /^([0-9]{6})$/
+      match == 0 ? true : false
+    end
+    # Egypt
+    def self.EG(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # El Salvador
+    def self.SV(zipcode)
+      match = zipcode =~ /^([0-9]{4})$/
       match == 0 ? true : false
     end
     # Estonia
@@ -130,6 +210,16 @@ module ValidateZipcode
       match = zipcode =~ /^([0-9]{5})$/
       match == 0 ? true : false
     end
+    # French Guiana
+    def self.GF(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # French Polynesia
+    def self.PF(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
     # Georgia
     def self.GE(zipcode)
       match = zipcode =~ /^([0-9]{4})$/
@@ -140,9 +230,29 @@ module ValidateZipcode
       match = zipcode =~ /^([0-9]{3}[ ][0-9]{2})$|([0-9]{5})$|([0-9]{3}-[0-9]{2})$/
       match == 0 ? true : false
     end
+    # Greenland
+    def self.GL(zipcode)
+      match = zipcode =~ /^([0-9]{4})$/
+      match == 0 ? true : false
+    end
+    # Guadeloupe
+    def self.GP(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Guatemala
+    def self.GT(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
     # Guinea-Bissau
     def self.GW(zipcode)
       match = zipcode =~ /^([0-9]{4})$/
+      match == 0 ? true : false
+    end
+    # Haiti
+    def self.HT(zipcode)
+      match = zipcode =~ /^([hH][tT][0-9]{4})$|([0-9]{4})$/
       match == 0 ? true : false
     end
     # Heard Island and McDonald Islands
@@ -150,9 +260,24 @@ module ValidateZipcode
       match = zipcode =~ /^([0-9]{4})$/
       match == 0 ? true : false
     end
+    # Holy See (Vatican)
+    def self.VA(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Honduras
+    def self.HN(zipcode)
+      match = zipcode =~ /^([a-zA-Z]{2}[0-9]{4})$/
+      match == 0 ? true : false
+    end
     # Hungary
     def self.HU(zipcode)
       match = zipcode =~ /^([0-9]{4})$/
+      match == 0 ? true : false
+    end
+    # Iceland
+    def self.IS(zipcode)
+      match = zipcode =~ /^([0-9]{3})$/
       match == 0 ? true : false
     end
     # India
@@ -163,6 +288,11 @@ module ValidateZipcode
     # Indonesia
     def self.ID(zipcode)
       match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Iran
+    def self.IR(zipcode)
+      match = zipcode =~ /^([0-9]{10})$/
       match == 0 ? true : false
     end
     # Iraq
@@ -185,14 +315,54 @@ module ValidateZipcode
       match = zipcode =~ /^([0-9]{3}-[0-9]{4})$|([0-9]{7})$/
       match == 0 ? true : false
     end
+    # Jordan
+    def self.JO(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
     # Kazakhstan
     def self.KZ(zipcode)
       match = zipcode =~ /^([0-9]{6})$/
       match == 0 ? true : false
     end
+    # Kenya
+    def self.KE(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # KR - Republic of Korea
+    def self.KR(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Kuwait
+    def self.KW(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
     # Kyrgyzstan
     def self.KG(zipcode)
       match = zipcode =~ /^([0-9]{6})$/
+      match == 0 ? true : false
+    end
+    # Laos
+    def self.LA(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Latvia
+    def self.LV(zipcode)
+      match = zipcode =~ /^([0-9]{4})$/
+      match == 0 ? true : false
+    end
+    # Lebanon
+    def self.LB(zipcode)
+      match = zipcode =~ /^([0-9]{4}[ ][0-9]{4})$|([0-9]{4})$/
+      match == 0 ? true : false
+    end
+    # Lesotho
+    def self.LS(zipcode)
+      match = zipcode =~ /^([0-9]{3})$/
       match == 0 ? true : false
     end
     # Liberia
@@ -205,9 +375,39 @@ module ValidateZipcode
       match = zipcode =~ /^([0-9]{4})$/
       match == 0 ? true : false
     end
+    # Lithuania
+    def self.LT(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Luxembourg
+    def self.LU(zipcode)
+      match = zipcode =~ /^([0-9]{4})$/
+      match == 0 ? true : false
+    end
     # Macedonia
     def self.MK(zipcode)
       match = zipcode =~ /^([0-9]{4})$/
+      match == 0 ? true : false
+    end
+    # Madagascar
+    def self.MG(zipcode)
+      match = zipcode =~ /^([0-9]{3})$/
+      match == 0 ? true : false
+    end
+    #  Malaysia
+    def self.MY(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Maldives
+    def self.MV(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Malta
+    def self.MT(zipcode)
+      match = zipcode =~ /^([a-zA-Z]{3}[ ][0-9]{4})$|([a-zA-Z]{3}[0-9]{4})$/
       match == 0 ? true : false
     end
     # Marshall Islands
@@ -215,9 +415,34 @@ module ValidateZipcode
       match = zipcode =~ /^([0-9]{5})$/
       match == 0 ? true : false
     end
+    # Martinique
+    def self.MQ(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Mauritius
+    def self.MU(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Mayotte
+    def self.YT(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
     # Mexico
     def self.MX(zipcode)
       match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Federated States of Micronesia
+    def self.FM(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Republic of Moldova
+    def self.MD(zipcode)
+      match = zipcode =~ /^([0-9]{4})$/
       match == 0 ? true : false
     end
     # Monaco
@@ -230,9 +455,29 @@ module ValidateZipcode
       match = zipcode =~ /^([0-9]{5})$/
       match == 0 ? true : false
     end
+    # Montenegro
+    def self.CS(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
+    # Montserrat
+    def self.MS(zipcode)
+      match = zipcode =~ /^([mM][sS][rR][0-9]{4})$|([0-9]{4})$/
+      match == 0 ? true : false
+    end
+    # Morocco
+    def self.MA(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
+      match == 0 ? true : false
+    end
     # Mozambique
     def self.MZ(zipcode)
       match = zipcode =~ /^([0-9]{4})$/
+      match == 0 ? true : false
+    end
+    # Myanmar
+    def self.MM(zipcode)
+      match = zipcode =~ /^([0-9]{5})$/
       match == 0 ? true : false
     end
     # Namibia
