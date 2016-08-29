@@ -3,25 +3,75 @@ require 'spec_helper'
 describe ValidateZipcode do
   it "all countries" do
     expect(ValidateZipcode::Validator.new("1234", "AF").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12100", "AX").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "AL").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "DZ").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("12345", "AD").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "AS").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("Y5900FNF", "AR").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("0002", "AM").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "AU").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "AT").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("1000", "AZ").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "BD").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "BE").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "BT").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "BO").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "BA").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("AB1234", "BN").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "BG").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("1234", "CX").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("1234", "CC").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "CV").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "KH").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "CY").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "CZ").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "DK").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "DO").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("123456", "EC").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "EG").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("1234", "SV").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "ET").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "GF").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "PF").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "GE").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("1234", "GL").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "GP").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "GT").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "GW").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("HT1234", "HT").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "HM").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "VA").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("AB1234", "HN").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "HU").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("123", "IS").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("1234567890", "IR").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "JO").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "MK").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "KE").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "KR").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "KW").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "LA").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("1234", "LV").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("1234 5678", "LB").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("123", "LS").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "LR").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "LI").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "LT").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("1234", "LU").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("123", "MG").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "MY").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "MV").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("ABC1234", "MT").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "MQ").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "MU").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "YT").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "FM").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("1234", "MD").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "CS").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("MSR1234", "MS").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "MA").valid?).to be_truthy
+    expect(ValidateZipcode::Validator.new("12345", "MM").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "VE").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "TN").valid?).to be_truthy
     expect(ValidateZipcode::Validator.new("1234", "CH").valid?).to be_truthy

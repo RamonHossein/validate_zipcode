@@ -7,6 +7,14 @@
 /pkg/
 /spec/reports/
 /tmp/
+/log/*
+!/log/.keep
+/tmp
+/vendor/assets/bower_components
+/vendor/cache
+/vendor/bundle
+/vendor/ruby
+/coverage
 *.gem
 *.rbc
 .bundle
